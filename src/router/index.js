@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
+import Article from '../views/Article.vue';
 
 Vue.use(VueRouter);
 
@@ -35,12 +36,18 @@ const routes = [
     name: 'perfil',
     component: () => import(/* webpackChunkName: "perfil" */ '../views/About.vue'),
   },
+  {
+    path: '/article/:id',
+    name: 'article',
+    component: Article,
+  },
 ];
 
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
   routes,
+  linkActiveClass: 'active',
 });
 
 export default router;

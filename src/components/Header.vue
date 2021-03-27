@@ -10,7 +10,7 @@
       <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item" v-for="item in menu" :key="item.link">
-            <router-link class="nav-link active" :to="'/'+item.link">{{item.title}}</router-link>
+            <router-link class="nav-link" :to="'/' + item.link">{{item.title}}</router-link>
           </li>
         </ul>
         <form class="d-flex">
