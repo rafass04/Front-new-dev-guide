@@ -33,23 +33,23 @@ export default {
   data: () => ({
     menu: [
       {
-        title: 'Nosso propósito', 
+        title: 'Nosso propósito',
         link: 'proposito',
       },
       {
-        title: 'Guia iniciante', 
+        title: 'Guia iniciante',
         link: 'guia-iniciante',
       },
       {
-        title: 'Cursos', 
+        title: 'Cursos',
         link: 'cursos-iniciantes',
       },
       {
-        title: 'Carreira', 
+        title: 'Carreira',
         link: 'carreira',
       },
       {
-        title: 'Perfil', 
+        title: 'Perfil',
         link: 'perfil',
       },
     ]
