@@ -1,7 +1,15 @@
 <template>
   <div id="app">
-    <Header class="mb-4"/>
-    <router-view/>
+    <div class="container">
+      <div class="row">
+        <Header class="mb-4"/>
+      </div>
+      <div class="row">
+        <div class="col">
+          <router-view/>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
