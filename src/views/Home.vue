@@ -10,31 +10,21 @@
 <script>
 import Carousel from '@/components/Carousel.vue';
 import Cards from '@/components/Cards.vue';
-import Tools from '@/components/Tools.vue';
-import Training from '@/components/Training.vue';
 
 export default {
   name: 'Home',
   components: {
     Carousel,
     Cards,
-    Tools,
-    Training,
   },
 
-  data() {
-    return {
-      articles: [
-        { id: 1, title: 'Guia iniciante' },
-        {
-          id: 2,
-          title: 'Diferença entre Machine Learning e Inteligência Artificial',
-          subtitle: null,
-          article: 'Diferenças do futuro <b>qualquer coisa</b>',
-          img: null,
-        },
-      ],
-    };
+  computed: {
+    articles() {
+      return this.$store.state.articles;
+    },
+  },
+  created() {
+    this.$store.dispatch('getArticles');
   },
 };
 </script>

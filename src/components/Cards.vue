@@ -4,7 +4,7 @@
   <div class="card-body">
     <h5 class="card-title">{{article.title}}</h5>
     <p class="card-text" v-if="subtitle">{{article.subtitle}}</p>
-    <router-link class="btn btn-outline-primary" :to="'/article/' + article.id">
+    <router-link class="btn btn-outline-primary" :to="'/article/' + article._id">
       Ler Artigo
     </router-link>
   </div>
